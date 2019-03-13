@@ -147,6 +147,12 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Dibujo de la linea
 	//Si se dibuja completa
 
+	glColor3f(0.0f, 0.0f, 1.0f);//color RGB en flotante
+	glBegin(GL_LINES);
+	glVertex2f(P1X, P1Y);
+	glVertex2f(P2X, P2Y);
+	glEnd();
+
 	if (P1X >= v0X && P1X <= l && P1Y >= v0Y && P1Y <= h && P2X >= v0X && P2X <= l && P2Y >= v0Y && P2Y <= h)
 	{
 		glColor3f(0.0f, 0.0f, 1.0f);//color RGB en flotante
